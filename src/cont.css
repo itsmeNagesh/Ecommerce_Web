@@ -1,0 +1,26 @@
+.container {
+    margin-top: 6rem;
+
+    .contact-form {
+      max-width: 50rem;
+      margin: auto;
+
+      .contact-inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+
+        input[type="submit"] {
+          cursor: pointer;
+          transition: all 0.2s;
+
+          &:hover {
+            background-color: '';
+            border: 1px solid blue;
+            color:blue;
+            transform: scale(0.9);
+          }
+        }
+      }
+    }
+}

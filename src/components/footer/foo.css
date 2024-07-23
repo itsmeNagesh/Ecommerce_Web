@@ -1,0 +1,81 @@
+.belt{
+    height: 10vh;
+    width: 100vh;
+    position: absolute;
+    z-index: 999;
+    top: 154%;
+    left: 28%;
+   
+    background-color: #F6F8FA;
+}
+.startf{
+    padding-top: 13vh;
+    background-color:rgba(97, 84, 243, 0.675);
+    height: 40vh;
+
+}
+.btnbelt{
+    background-color:rgba(97, 84, 243, 0.607);
+    height: 5vh;
+
+    width: 17vh;
+}
+.input1{
+    background-color: red;
+    width: 20px;
+}
+.circle2{
+    height: 40px;
+    width: 40px;
+    background-color:white;
+    border-radius: 50%;
+}
+.icon2 {
+   
+    font-size: 2.4rem;
+    position: relative;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 8px;
+  }
+  .footr{
+    margin-top: 11vh;
+  }
+@media only screen and (max-width: 600px) {
+    .startf{
+        padding-top: 13vh;
+        background-color:rgba(97, 84, 243, 0.675);
+        height: 64vh;
+    
+    }
+    .belt{
+        height: 8vh;
+        width: 36vh;
+        position: absolute;
+        z-index: 999;
+        top: 216%;
+        left: 9%;
+        background-color: rgb(255, 170, 0);
+    }
+    .footr{
+        margin-top: 5vh;
+        margin-left: 8vh;
+      }
+    .row1{
+        margin-left: 8vh;
+        
+    }
+    .b{
+        margin-top: 3vh;
+    }
+    .c{
+        margin-top: 3vh;
+    }
+  }
+ 
+    @media only screen and (max-width: 370px) {
+        .belt{
+            margin-left: 2vh;
+            margin-top: 25vh;
+        }
+    }

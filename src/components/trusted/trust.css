@@ -1,0 +1,13 @@
+.st2{
+    background-color: #F6F8FA;
+    margin-bottom: 10px;
+}
+.imageS{
+    height:40%;
+     width: 40%;
+}
+@media only screen and (max-width: 600px) {
+    .one1 {
+      background-color: rgb(5, 197, 24);
+    }
+  }
