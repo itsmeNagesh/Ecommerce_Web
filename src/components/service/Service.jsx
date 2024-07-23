@@ -25,7 +25,7 @@ const Service = () => {
               </div>
             </div>
             <div className="col-md-4 second-store d-flex justify-content-between flex-column" >
-              <div className="stor21 ms-5 mt-2 d-flex justify-content-center align-items-center  rounded-3">
+              <div className="stor21  d-flex justify-content-center align-items-center  rounded-3">
               <div className="circle d-flex justify-content-center align-items-center">
               <GiReceiveMoney className='icon me-2' />
               </div>
@@ -33,7 +33,7 @@ const Service = () => {
 
                 <small> Money-Back Guranteed</small>
               </div>
-              <div className="stor22 ms-5 mb-2 d-flex justify-content-center align-items-center  rounded-3">
+              <div className="stor22 d-flex justify-content-center align-items-center  rounded-3">
                 <div className="circle d-flex justify-content-center align-items-center">
               <MdSecurity className='icon me-2' />
               </div>

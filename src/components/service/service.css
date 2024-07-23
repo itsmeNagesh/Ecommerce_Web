@@ -21,6 +21,7 @@
 
 } 
 .stor21{
+    margin-left: 3vh;
     height: 10vh;
     width:80%;
     background-color: #F6F8FA;
@@ -37,6 +38,7 @@
 margin-left: 6vh;
 }
 .stor22{
+    margin-left: 3vh;
     height: 10vh;
     width:80%;
     background-color: #F6F8FA;
@@ -71,10 +73,14 @@ margin-left: 6vh;
      margin-bottom: 20px;   
     }
     .stor21{
+     margin-left: 3vh;
+
         margin-top: 30px;
      
     }
     .stor22{
+        margin-left: 3vh;
+        margin-right: 5vh;
         margin-top: 25px;
      
     }

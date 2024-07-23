@@ -1,12 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
 import HeroSection from './components/HeroSection'
+import './home.css'
 function Home() {
   const myData={
-    name:"Storeed Item"
+    name:"Buy4me Store "
   }
   return (
-    <Wrapper className=''><HeroSection myData={myData}/></Wrapper>
+    <Wrapper className='home'><HeroSection myData={myData}/></Wrapper>
   )
 }
 const Wrapper=styled.section`

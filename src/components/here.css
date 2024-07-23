@@ -1,4 +1,9 @@
-
+/* .imghero{
+  margin-top: 10vh;
+} */
+ .service{
+  margin-left: 15%;
+ }
 .hero-section-image {
     width: 100%;
     height: auto;
@@ -31,4 +36,20 @@
   .st2{
     background-color: #F6F8FA;
 
+}
+@media only screen and (max-width:768px){
+  .imghero{
+    margin-top: 10vh;
+  }
+  .hero-section-image{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top:-13%;
+  }
+  .service{
+    margin-left: 10%;
+   }
 }

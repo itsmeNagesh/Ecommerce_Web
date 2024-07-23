@@ -14,7 +14,7 @@ const HeroSection = ({ myData }) => {
         <div className="row">
             <div className="col-md-6 d-flex justify-content-center align-items-center">
                 <div>
-                <p className="intro-data mt-5">Welcome to </p>
+                <p className="intro-data  m-0">Welcome to </p>
                 <h1> {name} </h1>
                 <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
@@ -26,7 +26,7 @@ const HeroSection = ({ myData }) => {
             </NavLink>
                 </div>
             </div>
-            <div className="col-md-6 pt-5 ">
+            <div className="col-md-6 pt-5 imghero">
             <div className="hero-section-image  ">
             <figure>
               <img
@@ -39,7 +39,7 @@ const HeroSection = ({ myData }) => {
             </div>
         </div>
         <div className="row ">
-            <div className="" style={{marginLeft:"10%"}}><Service/></div>
+            <div className="service" ><Service/></div>
           
         </div>
        
