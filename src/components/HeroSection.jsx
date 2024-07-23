@@ -14,7 +14,7 @@ const HeroSection = ({ myData }) => {
         <div className="row">
             <div className="col-md-6 d-flex justify-content-center align-items-center">
                 <div>
-                <p className="intro-data">Welcome to </p>
+                <p className="intro-data mt-5">Welcome to </p>
                 <h1> {name} </h1>
                 <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias

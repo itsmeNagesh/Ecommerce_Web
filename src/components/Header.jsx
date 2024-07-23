@@ -9,9 +9,9 @@ const Header = () => {
  <>
    <Navbar  expand="md" className=' ss  '>
       <Navbar.Brand as={Link} to="/">
-        <img src="/images/logo.png" alt="Brand Logo" />
+        <img src="/images/logo2.png" alt="Brand Logo" className=' logo2 img-fluid ' />
       </Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Toggle aria-controls=" basic-navbar-nav " className='tog me-4 ' />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="w-100 d-flex justify-content-md-center justify-content-start text-light">
           <Nav.Link as={Link} to="/" className="nav-item active  text-light fw-bold fs-4">Home</Nav.Link>

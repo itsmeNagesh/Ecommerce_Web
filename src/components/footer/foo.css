@@ -55,7 +55,8 @@
         z-index: 999;
         top: 216%;
         left: 9%;
-        background-color: rgb(255, 170, 0);
+        /* background-color: rgb(255, 170, 0); */
+        background-color: #F6F8FA;
     }
     .footr{
         margin-top: 5vh;
