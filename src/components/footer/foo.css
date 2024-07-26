@@ -53,8 +53,8 @@
         width: 36vh;
         position: absolute;
         z-index: 999;
-        top: 230%;
-        left: 9%;
+        top: 288vh;
+        left: 19vh;
         /* background-color: rgb(255, 170, 0); */
         background-color: #F6F8FA;
     }
@@ -73,10 +73,28 @@
         margin-top: 3vh;
     }
   }
+  @media only screen and (max-width: 460px) {
+    .belt{
+       
+        height: 8vh;
+        height: 8vh;
+        width: 36vh;
+        position: absolute;
+        z-index: 999;
+        top: 230vh;
+        left: 5vh;
+    }
+}   
  
     @media only screen and (max-width: 370px) {
         .belt{
             margin-left: 2vh;
             margin-top: 25vh;
+            height: 8vh;
+            width: 36vh;
+            position: absolute;
+            z-index: 999;
+            top: 228vh;
+            left: 6vh;
         }
-    }
+    }   
