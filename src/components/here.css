@@ -4,6 +4,10 @@
  .service{
   margin-left: 15%;
  }
+ .feture{
+  background-color: #F6F8FA;
+  margin-top: 6vh;
+ }
 .hero-section-image {
     width: 100%;
     height: auto;

@@ -1,12 +1,15 @@
 import { NavLink } from "react-router-dom";
 import Service from './service/Service'
+import FeatureProduct from './FeatureProduct/FeatureProduct'
 import { Button } from "../styles/Button";
 import './here.css'
+import {useProductContext} from '../productcontext/ProductContext'
 import Trusted from './trusted/Trusted'
 import Footer from './footer/Footer'
 const HeroSection = ({ myData }) => {
   const { name } = myData;
-
+const {featureProducts}=useProductContext();
+console.log('zz',featureProducts)
   return (
    <>
    <main>
@@ -38,16 +41,24 @@ const HeroSection = ({ myData }) => {
           </div>
             </div>
         </div>
+        </div>
+        <div className="row   ">
+    <div className="feture" ><FeatureProduct/></div>
+  
+</div>
         <div className="row ">
             <div className="service" ><Service/></div>
           
         </div>
        
-    </div>
-    
-   </main> <div className="row st2 mt-5">
+  
+  
+   </main> 
+  
+   <div className="row st2 mt-5">
           <div><Trusted/> </div>
         </div>
+        
         <div className="foot">
           <Footer/>
         </div>

@@ -3,15 +3,15 @@
     width: 100vh;
     position: absolute;
     z-index: 999;
-    top: 154%;
-    left: 28%;
+    top: 220vh;
+    left: 55vh;
    
     background-color: #F6F8FA;
 }
 .startf{
     padding-top: 13vh;
     background-color:rgba(97, 84, 243, 0.675);
-    height: 40vh;
+    height: 45vh;
 
 }
 .btnbelt{
@@ -81,7 +81,7 @@
         width: 36vh;
         position: absolute;
         z-index: 999;
-        top: 230vh;
+        top: 357vh;
         left: 5vh;
     }
 }   
