@@ -5,7 +5,7 @@ import Home from './Home'
 import Contact from './Contact'
 import Cart from './Cart'
 import Product from './Product'
-import SingleProduct from './SingleProduct'
+import SingleProduct from './Single_product/SingleProduct'
 import Errorpage from './Errorpage'
 import { GlobalStyle } from "./GlobalStyle";
 import { ThemeProvider } from "styled-components";

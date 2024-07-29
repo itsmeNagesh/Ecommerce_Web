@@ -9,7 +9,7 @@ import Footer from './footer/Footer'
 const HeroSection = ({ myData }) => {
   const { name } = myData;
 const {featureProducts}=useProductContext();
-console.log('zz',featureProducts)
+// console.log('zz',featureProducts)  
   return (
    <>
    <main>

@@ -9,6 +9,10 @@ const intialState={
     product:[],
     isError:false,
      featureProducts:[],
+     isSingleLoading:false,
+     singleProduct:[],
+     isSingleApierror:false,
+
 };
 // let url = "http://api.pujakaitem.com/api/products";
 const AppProvider = ({ children }) => {
@@ -23,26 +27,43 @@ const AppProvider = ({ children }) => {
     // };
    
 
- const productdata2 = async () => {
+        const productdata2 = async () => {
                dispatch({type:"SET_LOADING"});
-        try {
-         let data2=products;
-        //    console.log(data2);
-           dispatch({type:"SET_API_DATA",payload:data2})
-       }
-          catch (error) {
-           dispatch({type:"API_ERROR"});
-               console.log(error)
-    
- }
-} 
-   
+               setTimeout(()=>{
+                try {
+                    let data2=products;
+                   //    console.log(data2);
+                      dispatch({type:"SET_API_DATA",payload:data2})
+                  }
+                     catch (error) {
+                        dispatch({
+                            type:'SET_API_ERROR'
+                        })
+                      dispatch({type:"API_ERROR"});
+                          console.log(error)
+               
+            }
+               },3000)
+       } 
+     // for Second api calling for single product
+    //  const API = "https://api.pujakaitem.com/api/products";
+     const getSingleproduct= async(url)=>{
+             dispatch({type:"SET_SINGLEPRODUCT_LOADING"})
+            try {
+                const res=axios.get(url);
+                const singleproduct=await res.data;
+                dispatch({type:"SET_SINGLE_PRODUCT",payload:singleproduct});
+            } catch (error) {
+                console.log(error)
+            }
+     }
     useEffect(() => {
         productdata2();
+        // getSingleproduct(API);
     }, []);
 
     return (
-        <AppContext.Provider value={{...state}}>
+        <AppContext.Provider value={{...state,getSingleproduct}}>
             {children}
         </AppContext.Provider>
     );
