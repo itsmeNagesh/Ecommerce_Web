@@ -14,9 +14,9 @@ const Footer = () => {
     </div>
     <footer>
         <div className="container-fluid startf">
-            <div className="container cont">
-                <div className="row  row1 ">
-                    <div className="col-md-3 a d-flex flex-column text-light">
+            <div className="ms-5 cont">
+                <div className="row  row1  ms-4 ">
+                    <div className="col-md-3 a d-flex flex-column text-light ">
                          <small className='fs-5 fw-bold'>Stored Item</small>
                          <small className='fs-6'>Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br/> Inventore, necessitatibus.</small>
                     </div>

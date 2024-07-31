@@ -56,14 +56,14 @@
   .cart-total--item {
     width: 3.4rem;
     height: 3.4rem;
-    position: absolute;
+    /* position: absolute; */
     background-color: #000;
     color: #000;
     border-radius: 50%;
     display: grid;
     place-items: center;
-    top: -41%;
-    left: 44%;
+    /* top: -41%;
+    left: 44%; */
     background-color:white;
   }
 }
@@ -75,6 +75,12 @@
 }
 
   @media only screen and (max-width:768px){
+    .sec{
+      width: 21vh;
+    }
+    .sec2{
+      width: 5vh;
+    }
     .ss{
       width: 50%;
       background-color:rgba(97, 84, 243, 0.675);
@@ -92,11 +98,11 @@
     } 
     .transparent-navbar {
       background-color:rgba(97, 84, 243, 0.675);
-      position: fixed;
+      /* position: fixed; */
       width: 100%;
-      top: 0;
-      left: 0;
-      z-index: 1000;
+      /* top: 0; */
+      /* left: 0; */
+      /* z-index: 1000; */
     }
     
     .ii{
@@ -105,12 +111,12 @@
     }
     .logo2{
       height: 8vh;
-      width: 13vh;
+      width: 9vh;
     
     }
     .tog{
       height: 5vh;
-      width: 6vh;
+      width: 5vh;
     }
 
     .cart-trolley--link {
@@ -142,4 +148,8 @@
   }
     }
   
-  
+    @media only screen and (max-width:380px){
+      .sec2{
+        width: 7vh;
+      }
+    }

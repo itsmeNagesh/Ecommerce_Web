@@ -22,8 +22,8 @@ const Header = () => {
         <Navbar.Brand as={Link} to="/" className='d-flex justify-content-center align-items-center'>
           <img src="/images/logo2.png" alt="Brand Logo" className='logo2 img-fluid' /> 
             <Form inline className=" serchbox ml-auto my-2 my-lg-0 d-flex">
-            <FormControl type="search" placeholder="Search" className="mr-sm-2 rounded-0 serchbox border-0 " />
-            <Button variant="outline-success ms-2 bg-light text-dark rounded-0 serchbox border-0">Search</Button>
+            <FormControl type="search" placeholder="Search....." className=" fw-bold sec mr-sm-2 rounded-0 serchbox border-0 " />
+            <Button className="sec2  ms-2 px-2 bg-light text-dark rounded-0 serchbox border-0">Search</Button>
           </Form>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" className='tog me-4' />

@@ -65,12 +65,27 @@ margin-left: 6vh;
     }
 } */
 @media only screen and (max-width: 600px) {
+    .stor1{
+        height: 20vh;
+     background-color: #F6F8FA;
+    }
+    .stor3{
+        height: 27vh;
+     background-color: #F6F8FA;
+    }
+    .stor21{
+        margin-left: 3vh;
+        height: 10vh;
+        width:80%;
+        background-color: #F6F8FA;
+    }
     .start{
         margin-left: 6%;
         /* background-color: chartreuse; */
     }
     .first-store{
-     margin-bottom: 20px;   
+     margin-bottom: -42px;
+     margin-left: -2vh;   
     }
     .stor21{
      margin-left: 3vh;
@@ -87,4 +102,29 @@ margin-left: 6vh;
     .third-store{margin-top: 30px;
        
      }
+  }
+  @media only screen and (max-width: 380px) {
+    .stor1{
+        height: 20vh;
+     background-color: #F6F8FA;
+    }
+    .stor3{
+        height: 20vh;
+     background-color: #F6F8FA;
+    }
+    .stor21{
+        margin-left: 3vh;
+        height: 10vh;
+        width:80%;
+        background-color: #F6F8FA;
+    }
+    .third-store{
+        margin-top: 30px;
+        margin-left: -2vh;
+       
+    }
+    .second-store{
+        /* background-color: black; */
+     margin-left: -2vh;
+     } 
   }

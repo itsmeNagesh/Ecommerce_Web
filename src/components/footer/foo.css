@@ -1,9 +1,10 @@
+
 .belt{
     height: 10vh;
     width: 100vh;
     position: absolute;
     z-index: 999;
-    top: 220vh;
+    top: 215vh;
     left: 55vh;
    
     background-color: #F6F8FA;
@@ -63,6 +64,7 @@
         margin-left: 8vh;
       }
     .row1{
+        padding-top: 6vh;
         margin-left: 8vh;
         
     }
@@ -81,12 +83,17 @@
         width: 36vh;
         position: absolute;
         z-index: 999;
-        top: 357vh;
+        top: 343vh;
         left: 5vh;
     }
 }   
  
     @media only screen and (max-width: 370px) {
+        .row1{
+            padding-top: 0px;
+            margin-left: 8vh;
+            
+        }
         .belt{
             margin-left: 2vh;
             margin-top: 25vh;
@@ -94,7 +101,7 @@
             width: 36vh;
             position: absolute;
             z-index: 999;
-            top: 228vh;
-            left: 6vh;
+            top: 359vh;
+            left: \4vh;
         }
     }   

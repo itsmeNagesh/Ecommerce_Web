@@ -8,7 +8,7 @@ const Service = () => {
   return (
     <>
       <main>
-        <div className="container">
+        <div className="container p-0">
           <div className="row mb-5  start" >
 
             <div className="col-md-4 first-store">

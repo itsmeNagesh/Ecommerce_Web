@@ -1,9 +1,18 @@
 /* .home{
     margin-top: 5vh;
 } */
+.home{
+      
+}
 @media only screen and (max-width:768px){
     .home{
       
         margin-top: 13vh;
+    }
+}
+@media only screen and (max-width:768px){
+    .home{
+      
+        margin-top:6vh;
     }
 }

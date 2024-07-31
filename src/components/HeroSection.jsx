@@ -13,8 +13,8 @@ const {featureProducts}=useProductContext();
   return (
    <>
    <main>
-    <div className="container">
-        <div className="row">
+    <div className="container p-0">
+        <div className="row p-0">
             <div className="col-md-6 d-flex justify-content-center align-items-center">
                 <div>
                 <p className="intro-data  m-0">Welcome to </p>
@@ -29,7 +29,7 @@ const {featureProducts}=useProductContext();
             </NavLink>
                 </div>
             </div>
-            <div className="col-md-6 pt-5 imghero">
+            <div className="col-md-6  imghero">
             <div className="hero-section-image  ">
             <figure>
               <img
