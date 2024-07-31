@@ -1,9 +1,24 @@
 import React from 'react'
-
+import {
+  Magnifier,
+  GlassMagnifier,
+  SideBySideMagnifier,
+  PictureInPictureMagnifier,
+  MOUSE_ACTIVATION,
+  TOUCH_ACTIVATION
+} from "react-image-magnifiers";
 const Myimage = ({imgs}) => {
   return (
     <>
-    <img src={imgs} alt='djcnd' height={300} width={500} className='img-fluid'/>
+    <GlassMagnifier
+  imageSrc={imgs}
+  imageAlt="Example"
+  allowOverflow="true"
+  shape="circle"
+  magnifierSize="50%"
+  // largeImageSrc="./large-image.jpg" // Optional
+/>
+    {/* <img src={imgs} alt='djcnd' height={300} width={500} className='img-fluid'/> */}
     </>
   )
 }

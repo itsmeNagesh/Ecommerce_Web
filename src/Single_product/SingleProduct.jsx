@@ -42,13 +42,17 @@ const SingleProduct = () => {
   return (
     <>
       <PageNavigation title={data ? data.name : 'Loading...'} />
-   
-
- {data && <section className="container">
+      <div className="container">
+        <div className="row">
+         {data  &&  <div className="col-md-6">  <div className="product_images">
+            <MyImage imgs={data.image} />
+          </div></div>}
+          <div className="col-md-6">
+          {data && <section className="container">
         <div className="grid grid-two-column">
           {/* product Images  */}
           <div className="product_images">
-            <MyImage imgs={data.image} />
+            {/* <MyImage imgs={data.image} /> */}
           </div>
 
           {/* product dAta  */}
@@ -103,6 +107,19 @@ const SingleProduct = () => {
           </div>
         </div>
       </section>}
+          </div>
+        </div>
+      </div>
+   
+
+
+
+
+
+
+
+
+
     </>
   );
 };

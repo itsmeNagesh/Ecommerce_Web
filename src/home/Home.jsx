@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import HeroSection from './components/HeroSection'
+import HeroSection from '../components/HeroSection'
 import './home.css'
 function Home() {
   const myData={
