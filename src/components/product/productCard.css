@@ -96,7 +96,7 @@
 }
 @media (max-width: 380px) {
   .card {
-    width: 42vh;
+    width:44vh;
     margin: 0.5rem;
   }
   .card-data {
