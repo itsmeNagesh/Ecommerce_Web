@@ -27,25 +27,26 @@ const SingleProduct = () => {
       setData(filteredData);
     }
   }, [idstate]);
+ const [digit,setdigit]=useState(1);
   console.log('dataafter',data)
-  // const {
-  //   id: alias,
-  //   name,
-  //   company,
-  //   price,
-  //   description,
-  //   category,
-  //   stock,
-  //   stars,
-  //   reviews,
-  // } = data;
+ 
   return (
     <>
       <PageNavigation title={data ? data.name : 'Loading...'} />
       <div className="container">
-        <div className="row">
+        <div className="row ">
          {data  &&  <div className="col-md-6">  <div className="product_images">
-            <MyImage imgs={data.image} />
+     <section className='subimg d-flex flex-column m-1'>
+     <img src={data.img1} alt='dcd'  className='fram shadow' onClick={()=>setdigit(1)}/>
+     <img src={data.img2} alt='dcd '  className='fram' onClick={()=>setdigit(2)}/>
+     <img src={data.img3} alt='dcd'  className='fram' onClick={()=>setdigit(3)}/>
+     {/* <div className='fram'><img src={data.img2} alt='dcd' /></div>
+     <div className='fram'><img src={data.img3} alt='dcd'/></div> */}
+      
+     </section>
+            {/* <MyImage imgs={data.img1} /> */}
+            <MyImage imgs={data[`img${digit}`]} />
+
           </div></div>}
           <div className="col-md-6">
           {data && <section className="container">

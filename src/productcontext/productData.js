@@ -1,11 +1,15 @@
 export const products = [
     {
       "id": "Buy4meoa",
-      "name": "iPhone X",
+      "name": "Apple iPhone 14 Pro Max",
       "company": "Apple",
-      "price": 6000000,
+      "price": 7499900,
       "colors": ["#ff0000", "#000000", "#CDD0D0"],
-      "image": "https://images.pexels.com/photos/1275229/pexels-photo-1275229.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+   
+      "img1": "https://cellbuddy.in/buddy/wp-content/uploads/2022/09/14-Pro-Gold.png",
+      "img2":"https://cellbuddy.in/buddy/wp-content/uploads/2022/09/14-Pro-Gold-3-768x768.png",
+      "img3":"https://cellbuddy.in/buddy/wp-content/uploads/2022/09/12-Pro-Max-Graphite-3.png",
+    
       "description": "The iPhone X features a 5.8-inch OLED display, a powerful A11 Bionic chip, and a 12MP dual camera system with enhanced capabilities for low-light photography. It's designed for a premium feel with a sleek, all-glass body.",
       "category": "mobile",
       "featured": true
@@ -77,13 +81,15 @@ export const products = [
     },
     {
       "id": "Buy4meoh",
-      "name": "Accessories",
-      "company": "Lenovo",
-      "price": 1099999,
+      "name": "Apple AirPods Pro",
+      "company": "Apple",
+      "price": 1699900,
       "colors": ["#000000", "#CDD0D0"],
-      "image": "https://images.pexels.com/photos/3178938/pexels-photo-3178938.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "description": "A range of accessories including cases, chargers, and more, designed to complement and enhance your tech devices. Made with high-quality materials for durability and style.",
-      "category": "accessories",
+      "img1": "https://cellbuddy.in/buddy/wp-content/uploads/2022/10/airpodspro2-01.png",
+      "img2":"https://cellbuddy.in/buddy/wp-content/uploads/2022/10/airpodspro2-03.png",
+      "img3":"https://cellbuddy.in/buddy/wp-content/uploads/2022/10/airpodspro2-02.png",
+      "description": "Additional Features: Here comes the all new and updated version of Apple Airpods Pro with Charging Case that crafts itself with design and capabilities which will make your hearing experience rise to a boost",
+      "category": " AirPods",
       "featured": true,
       "shipping": true
     },
@@ -122,10 +128,12 @@ export const products = [
       "id": "Buy4meol",
       "name": "Galaxy W20",
       "company": "Samsung",
-      "price": 311999,
+      "price": 2299900,
       "colors": ["#22D3EF", "#ff0000", "#000000"],
-      "image": "https://images.pexels.com/photos/51011/pexels-photo-51011.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "description": "The Galaxy W20 is a premium smartwatch with advanced features including health tracking, notifications, and a sleek, modern design.",
+      "img1": "https://cellbuddy.in/buddy/wp-content/uploads/2022/09/Series-7-41-_-45mm-GPSCellular-Red.png",
+      "img2":"https://cellbuddy.in/buddy/wp-content/uploads/2022/09/Series-7-41-_-45mm-GPSCellular-Gold-2.png",
+      "img3":"https://cellbuddy.in/buddy/wp-content/uploads/2022/09/Series-7-41-_-45mm-GPSCellular-Starlight-2.png",
+      "description": "The largest, most advanced Always-on Retina display yet makes everything you do with your Apple Watch Series 7 bigger and better. Series 7 is the most durable Apple Watch ever built, with an even more crack-resistant front crystal.",
       "category": "watch",
       "featured": true
     }

@@ -12,7 +12,7 @@ const Service = () => {
           <div className="row mb-5  start" >
 
             <div className="col-md-4 first-store">
-              <div className="stor1 d-flex justify-content-center align-items-center rounded-3 ">
+              <div className="stor1 hh d-flex justify-content-center align-items-center rounded-3  shadow">
                
                 <div><div>
                 <div className="circle d-flex justify-content-center align-items-center ms-5">
@@ -25,7 +25,7 @@ const Service = () => {
               </div>
             </div>
             <div className="col-md-4 second-store d-flex justify-content-between flex-column" >
-              <div className="stor21  d-flex justify-content-center align-items-center  rounded-3">
+              <div className=" hh stor21  d-flex justify-content-center align-items-center  rounded-3 shadow">
               <div className="circle d-flex justify-content-center align-items-center">
               <GiReceiveMoney className='icon me-2' />
               </div>
@@ -33,7 +33,7 @@ const Service = () => {
 
                 <small> Money-Back Guranteed</small>
               </div>
-              <div className="stor22 d-flex justify-content-center align-items-center  rounded-3">
+              <div className=" hh stor22 d-flex justify-content-center align-items-center  rounded-3 shadow">
                 <div className="circle d-flex justify-content-center align-items-center">
               <MdSecurity className='icon me-2' />
               </div>
@@ -43,7 +43,7 @@ const Service = () => {
             </div>
 
             <div className="col-md-4 third-store "> 
-              <div className="stor3 d-flex justify-content-center align-items-center  rounded-3" > 
+              <div className=" hh stor3 d-flex justify-content-center align-items-center  rounded-3 shadow" > 
                 <div>
                 
                 <div> <div className="circle d-flex justify-content-center align-items-center ms-5">
