@@ -28,8 +28,8 @@ const Header = () => {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" className='tog me-4' />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="nav-mobile w-100 d-flex justify-content-md-center justify-content-start text-light">
-            <Nav.Link as={Link} to="/" className=" active text-light fw-bold fs-4" onClick={handleSelect}>Home</Nav.Link>
+          <Nav className=" hh nav-mobile w-100 d-flex justify-content-md-center justify-content-start text-light">
+            <Nav.Link as={Link} to="/" className="hh  active text-light fw-bold fs-4" onClick={handleSelect}>Home</Nav.Link>
             <Nav.Link as={Link} to="/product" className='text-light fw-bold fs-4' onClick={handleSelect}>Products</Nav.Link>
             <Nav.Link as={Link} to="https://nageshwebcode.netlify.app/" className='text-light fw-bold fs-4' target='_blank' onClick={handleSelect}>About</Nav.Link>
             <Nav.Link as={Link} to="#" className='text-light fw-bold fs-4' onClick={handleSelect}>Services</Nav.Link>

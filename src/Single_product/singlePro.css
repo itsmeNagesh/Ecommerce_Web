@@ -1,6 +1,10 @@
-/* .container {
-    padding: 9rem 0;
-  } */
+.pc{
+  display: flex;
+  flex-direction: column;
+}
+   .mobile{
+    display:none;
+   }
 .subimg{
   width:auto;
   height:auto;
@@ -88,4 +92,16 @@
   }
   @media (max-width:768px) {
 
+  }
+  @media (max-width:500px) {
+    .pc{
+      display: none;
+    }
+    .mobile{
+      display:flex;
+      justify-content: center;
+      align-items: center;
+
+     }
+    
   }

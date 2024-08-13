@@ -36,18 +36,22 @@ const SingleProduct = () => {
       <div className="container">
         <div className="row ">
          {data  &&  <div className="col-md-6">  <div className="product_images">
-     <section className='subimg d-flex flex-column m-1'>
+     <section className=' pc subimg  m-1'>
      <img src={data.img1} alt='dcd'  className='fram shadow' onClick={()=>setdigit(1)}/>
      <img src={data.img2} alt='dcd '  className='fram' onClick={()=>setdigit(2)}/>
      <img src={data.img3} alt='dcd'  className='fram' onClick={()=>setdigit(3)}/>
-     {/* <div className='fram'><img src={data.img2} alt='dcd' /></div>
-     <div className='fram'><img src={data.img3} alt='dcd'/></div> */}
-      
      </section>
             {/* <MyImage imgs={data.img1} /> */}
             <MyImage imgs={data[`img${digit}`]} />
-
-          </div></div>}
+          
+          </div>
+          <section className=' mobile mt-4 '>
+     <img src={data.img1} alt='dcd'  className='fram shadow' onClick={()=>setdigit(1)}/>
+     <img src={data.img2} alt='dcd '  className='fram' onClick={()=>setdigit(2)}/>
+     <img src={data.img3} alt='dcd'  className='fram' onClick={()=>setdigit(3)}/>
+     </section>
+          </div>}
+        
           <div className="col-md-6">
           {data && <section className="container">
         <div className="grid grid-two-column">
