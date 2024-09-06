@@ -24,7 +24,6 @@
 // export default Myimage
 import React from 'react';
 
-
 const MyImage = ({ imgs }) => {
   return (
     <>

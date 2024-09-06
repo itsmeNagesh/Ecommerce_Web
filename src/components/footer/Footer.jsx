@@ -7,13 +7,14 @@ const Footer = () => {
   return (
   <>
   <main className='mt-5'>
-    <div className="belt rounded-3 d-flex justify-content-between flex-start ">
+   
+    <footer>
+        <div className="container-fluid startf">
+        <div className="belt rounded-3 d-flex justify-content-between flex-start ">
      <small className='fs-6 mt-4 ms-4'>Ready to get Started?<br/>Talk to us Today</small>
     <NavLink to={'/contact'} className='btnbelt border-0 mt-4 me-4 text-light fw-bold  d-flex justify-content-center align-items-center'>GET STARTED</NavLink> 
 
     </div>
-    <footer>
-        <div className="container-fluid startf">
             <div className="ms-5 cont">
                 <div className="row  row1  ms-4 ">
                     <div className="col-md-3 a d-flex flex-column text-light ">
