@@ -59,9 +59,9 @@ const {featureProducts}=useProductContext();
           <div><Trusted/> </div>
         </div>
         
-        <div className="foot">
+        {/* <div className="foot">
           <Footer/>
-        </div>
+        </div> */}
    </>
   );
 };

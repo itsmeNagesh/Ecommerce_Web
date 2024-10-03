@@ -4,12 +4,13 @@ import About from './about/About'
 import Home from './home/Home'
 import Contact from './contact/Contact'
 import Cart from './cart/Cart'
-import Product from './Product'
+import Product from './ProductNav'
 import SingleProduct from './Single_product/SingleProduct'
 import Errorpage from './Errorpage'
 import { GlobalStyle } from "./GlobalStyle";
 import { ThemeProvider } from "styled-components";
 import Header from './components/Header'
+import Footer from "./components/footer/Footer";
 const App = () => {
    const theme = {
     colors: {
@@ -49,6 +50,7 @@ const App = () => {
         <Route path="/singleProduct/:id" element={<SingleProduct/>}/>
         <Route path="*" element={<Errorpage/>}/>
       </Routes>
+      <Footer/>
     </Router>
     </ThemeProvider>
     </>

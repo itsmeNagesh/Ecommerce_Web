@@ -7,8 +7,11 @@ import MyImage from '../components/myimage/Myimage'
 import FormatPrice from "../components/FormateNumber";
 import { MdSecurity } from "react-icons/md";
 import { TbTruckDelivery, TbReplace } from "react-icons/tb";
+import Star from '../components/star/Star'
+import { GrFormSubtract } from "react-icons/gr";
+import { IoMdAdd } from "react-icons/io";
 
-
+import { Button } from "../styles/Button";
 const SingleProduct = () => {
   const { getSingleproduct, product } = useProductContext();
   const { id } = useParams();
@@ -29,7 +32,10 @@ const SingleProduct = () => {
   }, [idstate]);
  const [digit,setdigit]=useState(1);
   console.log('dataafter',data)
- 
+    const [item,setItem]=useState(1);
+   const  handleaddcart=()=>{
+    setItem(item+1);
+   }
   return (
     <>
       <PageNavigation title={data ? data.name : 'Loading...'} />
@@ -62,8 +68,8 @@ const SingleProduct = () => {
 
           {/* product dAta  */}
           <div className="product-data">
-            <h2>{data.name}</h2>
-            {/* <Star stars={data.stars} reviews={data.reviews} /> */}
+            <span className='headname'>{data.name}</span>
+            <Star Stars={data.star}  />
 
             <p className="product-data-price">
               MRP:
@@ -108,6 +114,13 @@ const SingleProduct = () => {
               <p>
                 Brand :<span> {data.company} </span>
               </p>
+              <div>
+                <span className=' fs-1 m-3' onClick={()=>{if(item>0)setItem(item-1)}} style={{cursor:"pointer"}}><GrFormSubtract /></span>
+                <span className='fs-2'>{item}</span>
+                <span className='fs-2 m-3' onClick={()=>setItem(item+1)} style={{cursor:"pointer"}}><IoMdAdd />
+                </span>
+              </div>
+              <Button className='' onClick={handleaddcart} >Add To Cart</Button>
             </div>
           </div>
         </div>
