@@ -1,5 +1,5 @@
 import { createContext, useContext, useEffect,useReducer } from "react";
-import {getProduct} from '../ApiServices/apiClient '
+// import {getProduct} from '../ApiServices/apiClient '
 const AppContext = createContext();
 import reducer from './productReducer'
 import {products} from './productData'
@@ -12,8 +12,11 @@ const intialState={
      isSingleLoading:false,
      singleProduct:[],
      isSingleApierror:false,
+     searchdata: "", // Add searchdata here
+     NofProduct:[]  //cartbag
 
 };
+
 // let url = "http://api.pujakaitem.com/api/products";
 const AppProvider = ({ children }) => {
     const [state,dispatch]=useReducer(reducer,intialState);
@@ -25,12 +28,34 @@ const AppProvider = ({ children }) => {
     //     const data2=await getProduct(url);
     //     console.log(data2);
     // };
-   
+    const updateSearchData = (data) => {
+        dispatch({ type: "SET_SEARCH_DATA", payload: data });
+    };
 
-        const productdata2 = async () => {
+    //  const updateCartbag=(data)=>{
+    //     dispatch({type:"SET_CARTBAG_DATA",payload:data});
+    //  }
+    
+    
+    // const updateCartbag = (data) => {
+    //     dispatch({ type: "SET_CARTBAG_DATA", payload: [...state.NofProduct, data] });
+    //   };
+    const updateCartbag = (id, quantity) => {
+      
+        dispatch({ type: "ADD_TO_CART", payload: { id, quantity } });
+      };
+    //   const removeItem = (idToRemove) => {
+    //     dispatch({ type: "DEL_CARTBAG_DATA", payload: idToRemove }); // Pass only the ID
+    //   };
+    const removeItem = (id) => {
+        dispatch({ type: "DEL_CARTBAG_DATA", payload: id });
+      };
+      
+      
+    const productdata2 = async () => {
                dispatch({type:"SET_LOADING"});
                setTimeout(()=>{
-                try {
+     try {
                     let data2=products;
                    //    console.log(data2);
                       dispatch({type:"SET_API_DATA",payload:data2})
@@ -45,10 +70,9 @@ const AppProvider = ({ children }) => {
             }
                },3000)
        } 
-     // for Second api calling for single product
-    //  const API = "https://api.pujakaitem.com/api/products";
-     const getSingleproduct= async(url)=>{
-             dispatch({type:"SET_SINGLEPRODUCT_LOADING"})
+
+       const getSingleproduct= async(url)=>{
+        dispatch({type:"SET_SINGLEPRODUCT_LOADING"})
             try {
                 const res=axios.get(url);
                 const singleproduct=await res.data;
@@ -56,14 +80,18 @@ const AppProvider = ({ children }) => {
             } catch (error) {
                 console.log(error)
             }
-     }
+}
+     // for Second api calling for single product
+    //  const API = "https://api.pujakaitem.com/api/products";
+    
     useEffect(() => {
         productdata2();
         // getSingleproduct(API);
     }, []);
 
     return (
-        <AppContext.Provider value={{...state,getSingleproduct}}>
+        <AppContext.Provider value={{...state,
+        getSingleproduct,updateSearchData,updateCartbag,removeItem}}>
             {children}
         </AppContext.Provider>
     );

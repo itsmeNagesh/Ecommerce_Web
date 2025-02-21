@@ -3,7 +3,7 @@ import Service from './service/Service'
 import FeatureProduct from './FeatureProduct/FeatureProduct'
 import { Button } from "../styles/Button";
 import './here.css'
-import {useProductContext} from '../productcontext/ProductContext'
+import {useProductContext} from '../productcontext/AppProvider'
 import Trusted from './trusted/Trusted'
 import Footer from './footer/Footer'
 const HeroSection = ({ myData }) => {

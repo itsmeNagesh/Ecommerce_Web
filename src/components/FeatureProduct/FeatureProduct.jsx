@@ -1,7 +1,7 @@
 import React from 'react';
 import './ProductService.css';
 import Product from '../../components/product/Product';
-import { useProductContext } from '../../productcontext/ProductContext';
+import { useProductContext } from '../../productcontext/AppProvider';
 import { NavLink } from 'react-router-dom';
 
 const FeatureProduct = () => {
